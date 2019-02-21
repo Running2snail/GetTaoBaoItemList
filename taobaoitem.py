@@ -131,20 +131,7 @@ class TaoBaoSearch(object):
             error_message_element = self.browser.find_element_by_css_selector('#J_Message > p')
             error_message = error_message_element.text
             raise SessionException('登录出错, message = ' + error_message)
-        
-        
-    # def __searchItem(self):
-    #
-    #     search_ele = self.browser.find_element_by_id('q')
-    #     search_ele.send_keys(u'笔记本电脑')
-    #     searchBtn = chrome.find_element_by_class_name('search-button')
-    #     searchBtn.click()
-        
-    # def __getItemList(self):
-    #     items = self.browser.find_element_by_class_name(items)
-    #     for item in items:
-    #         print(item)
-    #         item_pic = item.find_elements_by_tag_name("table")
+
 
     def index_page(self, page):
         """
